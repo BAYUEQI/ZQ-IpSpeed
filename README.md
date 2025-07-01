@@ -58,6 +58,7 @@ ZQ-IpSpeed 是一个基于 Cloudflare Workers 的高颜值 IP 查询与网络测
 ### 方式一：一键脚本自动部署（推荐）
 
 #### Windows 用户（需要node和git环境）
+#### 复制脚本，在cmd里直接粘贴进去
 
 ```batch
 @echo off
