@@ -57,16 +57,7 @@ ZQ-IpSpeed 是一个基于 Cloudflare Workers 的高颜值 IP 查询与网络测
 
 ### 方式一：一键脚本自动部署（推荐）
 
-#### Windows 用户
-
-1. 下载 [`install.cmd`](https://raw.githubusercontent.com/BAYUEQI/ZQ-IpSpeed/master/install.cmd) 文件（推荐用浏览器右键"另存为"）。
-2. 打开命令提示符（CMD），`cd` 到 install.cmd 所在目录，输入：
-   ```cmd
-   install.cmd
-   ```
-3. 按提示输入 Cloudflare account_id，自动完成依赖安装、登录、部署。
-
-> install.cmd 脚本内容如下：
+#### Windows 用户（需要node和git环境）
 
 ```batch
 @echo off
