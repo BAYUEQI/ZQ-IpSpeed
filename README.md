@@ -59,71 +59,16 @@ ZQ-IpSpeed 是一个基于 Cloudflare Workers 的高颜值 IP 查询与网络测
 
 #### Windows 用户
 
-1. 打开命令提示符（CMD），输入：
+1. 下载 [`install.cmd`](https://raw.githubusercontent.com/BAYUEQI/ZQ-IpSpeed/master/install.cmd) 文件（推荐用浏览器右键"另存为"）。
+2. 打开命令提示符（CMD），`cd` 到 install.cmd 所在目录，输入：
    ```cmd
-   # ZQ-IpSpeed
+   install.cmd
+   ```
+3. 按提示输入 Cloudflare account_id，自动完成依赖安装、登录、部署。
 
-ZQ-IpSpeed 是一个基于 Cloudflare Workers 的高颜值 IP 查询与网络测速工具箱，支持多源地理信息聚合、测速、明暗主题切换、移动端适配，并可一键部署到 Cloudflare Workers，永久免费、无服务器、无数据库。
+> install.cmd 脚本内容如下：
 
----
-
-## 功能特色
-
-- **IP 信息查询**  
-  - 支持多源聚合（ipapi.co、ip-api.com、ipinfo.io）
-  - 展示国家、地区、城市、经纬度、时区、ISP、ASN、组织等详细信息
-  - 自动识别设备类型与浏览器
-  - 支持自定义 IP 列表导入与批量查询
-
-- **网络测速**  
-  - 下载、上传、延迟、抖动多项指标
-  - 多线程测速，结果精准
-  - 动态仪表盘与进度条，测速过程可视化
-
-- **美观 UI 与明暗主题**  
-  - 赛博风格深色主题+浅色主题一键切换
-  - 响应式布局，移动端体验优秀
-  - 按钮、卡片、进度条等细节精致
-
-- **页面互相跳转**  
-  - 工具箱与测速主页可一键切换，互不干扰
-
-- **一键部署**  
-  - 支持 Cloudflare Workers Sites，静态资源与 Worker 脚本一体化部署
-  - 无需服务器、数据库，永久免费
-
----
-
-## 在线演示
-
-- **测速主页（Worker 页面）**  
-  [https://你的workers.dev/](https://你的workers.dev/)
-
-- **IP工具箱（静态页面）**  
-  [https://你的workers.dev/index.html](https://你的workers.dev/index.html)
-
-> 你可以将自己的域名绑定到 Cloudflare Workers，体验更佳。
-
----
-
-## 截图预览
-
-> 你可以在这里插入页面截图，示例：
-
-| 测速主页 | IP工具箱 |
-| :------: | :------: |
-| ![](./screenshot_speed.png) | ![](./screenshot_ip.png) |
-
----
-
-## 快速部署
-
-### 方式一：一键脚本自动部署（推荐）
-
-#### Windows 用户
-
-1. 打开命令提示符（CMD），输入：
-   ```cmd
+```batch
 @echo off
 setlocal enabledelayedexpansion
 
@@ -184,120 +129,7 @@ echo ==== 部署完成！====
 echo 访问你的 Workers 地址查看效果。
 
 pause
-   ```
-   或者直接下载 `install.cmd`，双击运行。
-
-#### Linux/macOS 用户
-
-1. 打开终端，输入：
-   ```bash
-   curl -fsSL https://raw.githubusercontent.com/BAYUEQI/ZQ-IpSpeed/master/install.sh | bash
-   ```
-
-2. 按提示输入 Cloudflare `account_id`，自动完成依赖安装、登录、部署。
-
----
-
-### 方式二：手动部署
-
-1. **克隆项目**
-    ```bash
-    git clone https://github.com/BAYUEQI/ZQ-IpSpeed.git
-    cd ZQ-IpSpeed
-    ```
-
-2. **安装依赖**
-    ```bash
-    npm install
-    ```
-
-3. **配置 wrangler.toml**
-    - 填写你的 `account_id`（在 Cloudflare 后台获取）
-    - 保持如下结构：
-
-    ```
-    .
-    ├── public/
-    │   ├── index.html
-    │   ├── script.js
-    │   └── styles.css
-    ├── worker.js
-    ├── wrangler.toml
-    ├── README.md
-    └── LICENSE
-    ```
-
-    **示例 wrangler.toml：**
-    ```toml
-    name = "ip-speed"
-    main = "worker.js"
-    compatibility_date = "2024-05-01"
-    workers_dev = true
-    account_id = "你的account_id"
-
-    [site]
-    bucket = "./public"
-    ```
-
-4. **登录 Cloudflare**
-    ```bash
-    wrangler login
-    ```
-
-5. **发布到 Cloudflare Workers**
-    ```bash
-    wrangler publish
-    ```
-
----
-
-## 常见问题
-
-### Q: 为什么访问 `/index.html` 和 `/` 是两个不同页面？
-A: `/` 是 Worker 动态页面（测速主页），`/index.html` 是静态工具箱页面。你可以通过底部按钮互相跳转。
-
-### Q: 如何自定义测速/查询API源？
-A: 你可以在 `worker.js` 里修改 `getGeoDataFromMultipleSources` 函数，添加或替换 API 源。
-
-### Q: 如何绑定自定义域名？
-A: 在 Cloudflare 后台添加自定义域名，并在 wrangler.toml 里配置 `route` 和 `zone_id`。
-
-### Q: 支持哪些浏览器和设备？
-A: 支持所有现代浏览器，移动端自适应，推荐 Chrome/Edge/Firefox。
-
----
-
-## 技术细节
-
-- **前端**：原生 HTML+CSS+JS，无依赖，赛博风格美化，移动端适配
-- **后端**：Cloudflare Workers，支持多源 IP 查询，测速逻辑全部前端实现
-- **部署**：Cloudflare Workers Sites，静态资源与 Worker 脚本一体化
-- **安全**：无用户数据存储，所有查询实时获取
-
----
-
-## 鸣谢
-
-- [Cloudflare Workers](https://workers.cloudflare.com/)
-- [ipapi.co](https://ipapi.co/)
-- [ip-api.com](http://ip-api.com/)
-- [ipinfo.io](https://ipinfo.io/)
-- [Font Awesome](https://fontawesome.com/)
-- 以及所有开源贡献者
-
----
-
-## 许可证
-
-本项目采用 MIT License，详见 [LICENSE](./LICENSE)。
-
----
-
-## 联系
-
-如有建议或问题，欢迎提 [issue](https://github.com/BAYUEQI/ZQ-IpSpeed/issues) 或 PR！ 
-   ```
-   或者直接下载 `install.cmd`，双击运行。
+```
 
 #### Linux/macOS 用户
 
