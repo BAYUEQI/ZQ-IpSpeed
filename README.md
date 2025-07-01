@@ -61,7 +61,7 @@ ZQ-IpSpeed 是一个基于 Cloudflare Workers 的高颜值 IP 查询与网络测
 
 1. 打开命令提示符（CMD），输入：
    ```cmd
-   curl -O https://raw.githubusercontent.com/BAYUEQI/ZQ-IpSpeed/main/install.cmd && install.cmd
+   curl -O https://raw.githubusercontent.com/BAYUEQI/ZQ-IpSpeed/master/install.cmd && install.cmd
    ```
    或者直接下载 `install.cmd`，双击运行。
 
@@ -69,7 +69,7 @@ ZQ-IpSpeed 是一个基于 Cloudflare Workers 的高颜值 IP 查询与网络测
 
 1. 打开终端，输入：
    ```bash
-   curl -fsSL https://raw.githubusercontent.com/BAYUEQI/ZQ-IpSpeed/main/install.sh | bash
+   curl -fsSL https://raw.githubusercontent.com/BAYUEQI/ZQ-IpSpeed/master/install.sh | bash
    ```
 
 2. 按提示输入 Cloudflare `account_id`，自动完成依赖安装、登录、部署。
