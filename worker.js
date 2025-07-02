@@ -432,25 +432,27 @@ function renderHtml(data) {
     }
     @media (max-width: 900px) {
       .button-container {
-        position: static;
-        bottom: auto;
-        left: auto;
-        transform: none;
-        margin-top: 30px;
-        margin-bottom: 20px;
-        justify-content: center;
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        padding: 0 10px;
-        box-sizing: border-box;
+        position: static !important;
+        bottom: auto !important;
+        left: auto !important;
+        transform: none !important;
+        margin-top: 30px !important;
+        margin-bottom: 20px !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+        gap: 10px !important;
+        width: 100% !important;
+        padding: 0 10px !important;
+        box-sizing: border-box !important;
+        align-items: stretch !important;
       }
       .cyber-button {
-        width: 100%;
-        min-width: 0;
-        font-size: 1rem;
-        padding: 14px 0;
-        border-radius: 10px;
+        width: 100% !important;
+        min-width: 0 !important;
+        font-size: 1rem !important;
+        padding: 14px 0 !important;
+        border-radius: 10px !important;
+        margin-bottom: 0 !important;
       }
     }
     
