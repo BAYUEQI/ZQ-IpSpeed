@@ -422,13 +422,16 @@ function renderHtml(data) {
     }
     
     .button-container {
-      position: fixed;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
       display: flex;
-      gap: 16px;
-      z-index: 1000;
+      width: 100%;
+      max-width: 900px;
+      margin: 30px auto 0 auto;
+      gap: 12px;
+      justify-content: center;
+    }
+    .button-container .cyber-button {
+      flex: 1;
+      min-width: 0;
     }
     
     .cyber-button {
@@ -573,8 +576,7 @@ function renderHtml(data) {
       .value { max-height: 36px; }
       .title { font-size: 2rem; }
       .button-container {
-        gap: 12px;
-        bottom: 15px;
+        max-width: 100%;
       }
       .cyber-button {
         padding: 12px 24px;
@@ -582,6 +584,19 @@ function renderHtml(data) {
         min-width: 90px;
         max-width: 140px;
         border-radius: 12px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .button-container {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin: 20px 0 0 0;
+      }
+      .button-container .cyber-button {
+        width: 100%;
+        flex: unset;
       }
     }
     
