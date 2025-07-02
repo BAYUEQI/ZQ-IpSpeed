@@ -667,20 +667,20 @@ function renderHtml(data) {
       <div class="gauge-desc">ms</div>
     </div>
   </div>
-  <div class="button-container">
-    <button class="cyber-button" id="back-to-top" onclick="scrollToTop()">
+  <div class="button-container" style="flex-direction: column; gap: 10px; width: 100%; padding: 0 10px; box-sizing: border-box;">
+    <button class="cyber-button" id="back-to-top" onclick="scrollToTop()" style="width: 100%; min-width: 0; font-size: 1rem; padding: 14px 0; border-radius: 10px;">
       <span class="button-icon">⬆️</span>
       <span class="button-text">返回顶部</span>
     </button>
-    <button class="cyber-button" id="theme-toggle" onclick="toggleTheme()">
+    <button class="cyber-button" id="theme-toggle" onclick="toggleTheme()" style="width: 100%; min-width: 0; font-size: 1rem; padding: 14px 0; border-radius: 10px;">
       <span class="button-icon">🌙</span>
       <span class="button-text">明暗切换</span>
     </button>
-    <button class="cyber-button" id="github-link" onclick="openGithub()">
+    <button class="cyber-button" id="github-link" onclick="openGithub()" style="width: 100%; min-width: 0; font-size: 1rem; padding: 14px 0; border-radius: 10px;">
       <span class="button-icon">📦</span>
       <span class="button-text">GitHub</span>
     </button>
-    <button class="cyber-button" id="to-worker" onclick="location.href='/'">
+    <button class="cyber-button" id="to-worker" onclick="location.href='/'" style="width: 100%; min-width: 0; font-size: 1rem; padding: 14px 0; border-radius: 10px;">
       <span class="button-icon">🚀</span>
       <span class="button-text">IP 查询</span>
     </button>
