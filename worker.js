@@ -431,14 +431,24 @@ function renderHtml(data) {
     }
     
     .cyber-button {
+      background: linear-gradient(145deg, rgba(0, 0, 0, 0.8), rgba(20, 0, 20, 0.9));
+      border: 2px solid #00ffff;
+      border-radius: 12px;
+      color: #00ffff;
       display: flex;
       align-items: center;
       justify-content: center;
-      flex: 1;
-      min-width: 0;
-      gap: 6px;
+      gap: 4px;
       padding: 12px 0;
+      font-family: 'Orbitron', monospace;
       font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+      backdrop-filter: blur(5px);
+      text-shadow: 0 0 6px #00ffff;
+      letter-spacing: 0.5px;
     }
     
     .button-icon {
