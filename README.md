@@ -36,8 +36,8 @@
 
 ## 🌈 在线体验
 
-- **测速主页**：[https://ipspeed.520jacky.dpdns.org/]
-- **IP工具箱**：[https://ipspeed.520jacky.dpdns.org/index.html]
+- **IP查询**：https://ipspeed.520jacky.dpdns.org
+- **IP获取**：https://ipspeed.520jacky.dpdns.org/index.html
 
 
 ---
