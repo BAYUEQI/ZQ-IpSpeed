@@ -430,7 +430,7 @@ function renderHtml(data) {
       gap: 16px;
       z-index: 1000;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
       .button-container {
         position: static;
         bottom: auto;
