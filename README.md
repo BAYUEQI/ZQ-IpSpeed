@@ -72,7 +72,8 @@ ZQ-IpSpeed 是一个基于 Cloudflare Workers 的高颜值 IP 查询与网络测
    点击右上角的fork
 
 2. **cloudfalre部署**
-    打开cloudflare，创建新的worker，连接github，选择本项目，创建新项目
+    打开cloudflare，创建新的worker，接着点击导入存储库，选择本项目，点击创建和部署。
+
 
 ---
 
