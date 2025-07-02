@@ -46,7 +46,7 @@
 
 | IP查询 | IP获取 |
 | :------: | :------: |
-| ![](./img/screenshot_speed.png) | ![](./img/screenshot_ip.png) |
+| ![](/img/screenshot_speed.png) | ![](/img/screenshot_ip.png) |
 
 ---
 
