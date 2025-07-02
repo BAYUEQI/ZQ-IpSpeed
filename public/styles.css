@@ -362,15 +362,16 @@ h1 i, h2 i, h3 i {
 
 .button-container {
     display: flex;
-    gap: 16px;
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto 0 auto;
+    gap: 12px;
+    justify-content: center;
 }
 
-.cyber-button {
-    flex: 1 1 0;
+.button-container .cyber-button {
+    flex: 1;
     min-width: 0;
-    text-align: center;
-    justify-content: center;
-    box-sizing: border-box;
 }
 
 button {
@@ -1790,4 +1791,23 @@ button:hover i {
         padding: 14px 0;
         border-radius: 10px;
     }
+}
+
+@media (max-width: 900px) {
+  .button-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+  .button-container .cyber-button {
+    width: 100%;
+    flex: unset;
+  }
 } 
