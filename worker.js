@@ -146,6 +146,14 @@ function renderHtml(data) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NJ6E0M1RJ4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NJ6E0M1RJ4');
+  </script>
   <title>ZQ-IpSpeed</title>
   <link rel="icon" type="image/svg+xml" href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="%2323284a"/><path d="M32 12a20 20 0 1 1-14.14 5.86" fill="none" stroke="%2300e6ff" stroke-width="4"/><circle cx="32" cy="32" r="6" fill="%2300e6ff"/><rect x="30" y="8" width="4" height="16" rx="2" fill="%23fff"/></svg>' />
   <style>
