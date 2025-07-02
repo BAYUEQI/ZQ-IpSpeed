@@ -1,4 +1,9 @@
 {
+  "name": "IpSpeed",
+  "version": "1.0.0",
+  "scripts": {
+    "deploy": "wrangler deploy"
+  },
   "dependencies": {
     "@cloudflare/kv-asset-handler": "^0.4.0"
   }
