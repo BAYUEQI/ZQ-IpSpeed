@@ -119,8 +119,8 @@ UI 响应式设计，适配主流手机和平板。
 
 - [Cloudflare Workers 官方文档](https://developers.cloudflare.com/workers/) 🌩️
 - [ipapi.co](https://ipapi.co/) 🌍
-- [ip-api.com](http://ip-api.com/) 🌏
 - [ipinfo.io](https://ipinfo.io/) 🗺️
+- [ipdb API](https://github.com/ymyuuu/IPDB)🧭
 - [Speedtest by Ookla](https://www.speedtest.net/) ⚡
 - [BAYUEQI 的其他项目](https://github.com/BAYUEQI) ⭐
 
