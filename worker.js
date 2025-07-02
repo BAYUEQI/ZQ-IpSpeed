@@ -457,6 +457,11 @@ function renderHtml(data) {
     }
     
     .cyber-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
       background: linear-gradient(145deg, rgba(0, 0, 0, 0.8), rgba(20, 0, 20, 0.9));
       border: 2px solid #00ffff;
       border-radius: 12px;
@@ -467,9 +472,7 @@ function renderHtml(data) {
       font-weight: 600;
       cursor: pointer;
       transition: all 0.2s ease;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      gap: 0;
       box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
       backdrop-filter: blur(5px);
       text-shadow: 0 0 6px #00ffff;
@@ -489,12 +492,16 @@ function renderHtml(data) {
     }
     
     .button-icon {
-      font-size: 1.1em;
-      filter: drop-shadow(0 0 4px currentColor);
+      margin-right: 0;
+      margin-bottom: 4px;
+      font-size: 1.3em;
+      display: block;
     }
     
     .button-text {
       white-space: nowrap;
+      text-align: center;
+      display: block;
     }
     
     /* 明暗主题样式 */
@@ -697,11 +704,6 @@ function renderHtml(data) {
       <span class="button-text">IP 获取</span>
     </button>
   </div>
-  <footer>
-    <div class="attribution">
-      &copy; 2024 <a href="https://github.com/BAYUEQI/ZQ-IpSpeed" target="_blank">BAYUEQI</a> | ZQ-IpSpeed
-    </div>
-  </footer>
   <script>
     function renderGauge(id, value, max, color, unit) {
       const percent = Math.min(value / max, 1);
