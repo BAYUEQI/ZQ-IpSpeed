@@ -596,13 +596,25 @@ function renderHtml(data) {
     @media (max-width: 768px) {
       .button-container {
         flex-direction: column;
-        gap: 10px;
+        gap: 18px;
         width: 100%;
-        margin: 20px 0 0 0;
+        margin: 24px 0 0 0;
+        align-items: stretch;
+        padding: 0 8px;
+        box-sizing: border-box;
       }
       .cyber-button {
         width: 100%;
         flex: unset;
+        min-width: 0;
+        max-width: 100%;
+        justify-content: center;
+        font-size: 1.08rem;
+        padding: 16px 0;
+        border-radius: 14px;
+      }
+      .button-text {
+        font-size: 1.08rem;
       }
     }
     
