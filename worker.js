@@ -620,6 +620,16 @@ function renderHtml(data) {
         font-size: 0.75rem;
       }
     }
+    
+    .copyright {
+      text-align: center;
+      font-size: 13px;
+      color: #8fa1c7;
+      margin-top: 18px;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+      user-select: none;
+    }
   </style>
 </head>
 <body>
@@ -685,6 +695,7 @@ function renderHtml(data) {
       <span class="button-text">IP 获取</span>
     </button>
   </div>
+  <div class="copyright">© 2025 BAYUEQI | ZQ-IpSpeed</div>
   <script>
     function renderGauge(id, value, max, color, unit) {
       const percent = Math.min(value / max, 1);
