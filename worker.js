@@ -682,7 +682,7 @@ function renderHtml(data) {
     </button>
     <button class="cyber-button" id="to-worker" onclick="location.href='/index.html'">
       <span class="button-icon">🚀</span>
-      <span class="button-text">IP 查询</span>
+      <span class="button-text">IP 获取</span>
     </button>
   </div>
   <script>
