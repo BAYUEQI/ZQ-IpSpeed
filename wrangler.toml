@@ -1,4 +1,4 @@
-name = "ip"
+name = "ipspeed"
 main = "worker.js"
 compatibility_date = "2024-05-01"
 workers_dev = true
