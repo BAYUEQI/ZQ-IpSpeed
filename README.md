@@ -14,6 +14,26 @@
 
 ---
 
+## 🏆 项目优势
+
+- 🆓 永久免费，无需服务器、无数据库、无后端维护成本
+- 🛡️ 数据安全，所有查询实时获取，不存储用户隐私
+- 🧩 易于二次开发，代码结构清晰，注释详细
+- 🌍 全球加速，依托 Cloudflare 网络，访问速度快
+- 🛠️ 支持自定义域名，轻松打造专属测速/工具站
+
+---
+
+## 🌟 应用场景
+
+- 个人/团队测速站点搭建
+- 机场/代理服务商测速与IP信息展示
+- 个人主页/博客集成网络工具箱
+- 内网/局域网环境下的IP与网络测试
+- 作为前端练习/Cloudflare Workers 学习项目
+
+---
+
 ## 🌈 在线体验
 
 - **测速主页**：[https://你的workers.dev/](https://你的workers.dev/)
@@ -59,6 +79,50 @@ wrangler deploy
 - **后端**：Cloudflare Workers，多源 IP 查询，测速逻辑全部前端实现
 - **部署**：Cloudflare Workers Sites，静态资源与 Worker 脚本一体化
 - **安全**：无用户数据存储，所有查询实时获取
+
+---
+
+## ❓ 常见问题（FAQ）
+
+### 1. 🚦 为什么测速结果和本地测速工具不同？
+测速逻辑全部前端实现，受限于浏览器、网络环境和 Cloudflare 节点，结果仅供参考。
+
+### 2. 🌏 支持哪些国家/地区？
+支持全球绝大多数地区，IP信息聚合多源，准确率高。
+
+### 3. 🛠️ 如何自定义/二次开发？
+直接修改 `public/` 或 `worker.js`，前后端均为无依赖原生代码，易于扩展。
+
+### 4. 🆓 是否永久免费？
+是，基于 Cloudflare Workers 免费额度，个人/小型站点完全够用。
+
+### 5. 📱 移动端体验如何？
+UI 响应式设计，适配主流手机和平板。
+
+---
+
+## 🤝 贡献指南
+
+欢迎任何形式的贡献！
+
+1. Fork 本仓库
+2. 新建分支 (`git checkout -b feature-xxx`)
+3. 提交更改 (`git commit -m 'feat: 新功能说明'`)
+4. 推送分支 (`git push origin feature-xxx`)
+5. 提 PR（Pull Request）
+
+如有建议/bug/新想法，欢迎提 [issue](https://github.com/BAYUEQI/ZQ-IpSpeed/issues)！
+
+---
+
+## 🔗 友情链接 & 推荐项目
+
+- [Cloudflare Workers 官方文档](https://developers.cloudflare.com/workers/) 🌩️
+- [ipapi.co](https://ipapi.co/) 🌍
+- [ip-api.com](http://ip-api.com/) 🌏
+- [ipinfo.io](https://ipinfo.io/) 🗺️
+- [Speedtest by Ookla](https://www.speedtest.net/) ⚡
+- [BAYUEQI 的其他项目](https://github.com/BAYUEQI) ⭐
 
 ---
 
