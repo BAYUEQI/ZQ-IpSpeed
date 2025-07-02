@@ -458,6 +458,13 @@ function renderHtml(data) {
       text-shadow: 0 0 6px #ffff00;
     }
     
+    .cyber-button:active {
+      transform: scale(0.96);
+      box-shadow: 0 0 24px #ffff00, 0 0 8px #00ffff;
+      border-color: #ffff00;
+      color: #ffff00;
+    }
+    
     .button-icon {
       margin-right: 0;
       padding: 0;
