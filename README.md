@@ -57,12 +57,30 @@ ZQ-IpSpeed 是一个基于 Cloudflare Workers 的高颜值 IP 查询与网络测
 
 ### 方式一：一键脚本自动部署（推荐）
 
-1. 打开终端，输入：
+1. 克隆仓库
    ```bash
-   curl -fsSL https://raw.githubusercontent.com/BAYUEQI/ZQ-IpSpeed/master/install.sh | bash
+   git clone https://github.com/BAYUEQI/ZQ-IpSpeed.git
+   ```
+   ```bash
+   cd ZQ-IpSpeed
    ```
 
-2. 按提示输入 Cloudflare `account_id`，自动完成依赖安装、登录、部署。
+2. 安装 wrangler
+   ```bash
+   npm install -g wrangler
+   ```
+3.登录cloudfalre账号
+  ```bash
+   wrangler login
+   ```
+4.安装依赖
+  ```bash
+  npm install
+  ```
+5.部署到cloudfalre worker
+  ```bash
+  wrangler deploy
+  ```
 
 ---
 
