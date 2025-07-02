@@ -667,22 +667,22 @@ function renderHtml(data) {
       <div class="gauge-desc">ms</div>
     </div>
   </div>
-  <div class="button-container" style="flex-direction: column; gap: 10px; width: 100%; padding: 0 10px; box-sizing: border-box; display: flex; margin: 15px 0;">
-    <button class="cyber-button" id="back-to-top" onclick="scrollToTop()" style="width: 100%; min-width: 0; font-size: 1rem; padding: 14px 0; border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-      <span class="button-icon" style="font-size: 1.3em; display: block; margin-bottom: 2px;">⬆️</span>
-      <span class="button-text" style="display: block; text-align: center; white-space: nowrap;">返回顶部</span>
+  <div class="button-container">
+    <button class="cyber-button" id="back-to-top" onclick="scrollToTop()">
+      <span class="button-icon">⬆️</span>
+      <span class="button-text">返回顶部</span>
     </button>
-    <button class="cyber-button" id="theme-toggle" onclick="toggleTheme()" style="width: 100%; min-width: 0; font-size: 1rem; padding: 14px 0; border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-      <span class="button-icon" style="font-size: 1.3em; display: block; margin-bottom: 2px;">🌙</span>
-      <span class="button-text" style="display: block; text-align: center; white-space: nowrap;">明暗切换</span>
+    <button class="cyber-button" id="theme-toggle" onclick="toggleTheme()">
+      <span class="button-icon">🌙</span>
+      <span class="button-text">明暗切换</span>
     </button>
-    <button class="cyber-button" id="github-link" onclick="openGithub()" style="width: 100%; min-width: 0; font-size: 1rem; padding: 14px 0; border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-      <span class="button-icon" style="font-size: 1.3em; display: block; margin-bottom: 2px;">📦</span>
-      <span class="button-text" style="display: block; text-align: center; white-space: nowrap;">GitHub</span>
+    <button class="cyber-button" id="github-link" onclick="openGithub()">
+      <span class="button-icon">📦</span>
+      <span class="button-text">GitHub</span>
     </button>
-    <button class="cyber-button" id="to-worker" onclick="location.href='/'" style="width: 100%; min-width: 0; font-size: 1rem; padding: 14px 0; border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-      <span class="button-icon" style="font-size: 1.3em; display: block; margin-bottom: 2px;">🚀</span>
-      <span class="button-text" style="display: block; text-align: center; white-space: nowrap;">IP 查询</span>
+    <button class="cyber-button" id="to-worker" onclick="location.href='/index.html'">
+      <span class="button-icon">🚀</span>
+      <span class="button-text">IP 查询</span>
     </button>
   </div>
   <script>
