@@ -1,51 +1,29 @@
-# ZQ-IpSpeed
+# 🚀 ZQ-IpSpeed
 
-ZQ-IpSpeed 是一个基于 Cloudflare Workers 的高颜值 IP 查询与网络测速工具箱，支持多源地理信息聚合、测速、明暗主题切换、移动端适配，并可一键部署到 Cloudflare Workers，永久免费、无服务器、无数据库。
-
----
-
-## 功能特色
-
-- **IP 信息查询**  
-  - 支持多源聚合（ipapi.co、ip-api.com、ipinfo.io）
-  - 展示国家、地区、城市、经纬度、时区、ISP、ASN、组织等详细信息
-  - 自动识别设备类型与浏览器
-  - 支持自定义 IP 列表导入与批量查询
-
-- **网络测速**  
-  - 下载、上传、延迟、抖动多项指标
-  - 多线程测速，结果精准
-  - 动态仪表盘与进度条，测速过程可视化
-
-- **美观 UI 与明暗主题**  
-  - 赛博风格深色主题+浅色主题一键切换
-  - 响应式布局，移动端体验优秀
-  - 按钮、卡片、进度条等细节精致
-
-- **页面互相跳转**  
-  - 工具箱与测速主页可一键切换，互不干扰
-
-- **一键部署**  
-  - 支持 Cloudflare Workers Sites，静态资源与 Worker 脚本一体化部署
-  - 无需服务器、数据库，永久免费
+> 🌐 基于 Cloudflare Workers 的高颜值 IP 查询与网络测速工具箱
 
 ---
 
-## 在线演示
+## ✨ 项目亮点
 
-- **测速主页（Worker 页面）**  
-  [https://你的workers.dev/](https://你的workers.dev/)
-
-- **IP工具箱（静态页面）**  
-  [https://你的workers.dev/index.html](https://你的workers.dev/index.html)
-
-> 你可以将自己的域名绑定到 Cloudflare Workers，体验更佳。
+- 🗺️ **多源 IP 信息查询**：聚合 ipapi.co、ip-api.com、ipinfo.io，展示国家、城市、ISP、经纬度等
+- ⚡ **网络测速**：下载、上传、延迟、抖动多项指标，动态仪表盘，测速过程可视化
+- 🎨 **赛博 UI & 明暗主题**：一键切换深浅色，响应式布局，移动端体验极佳
+- 🔄 **页面互跳**：测速主页与工具箱自由切换
+- ☁️ **一键部署**：Cloudflare Workers Sites 支持，永久免费，无服务器、无数据库
 
 ---
 
-## 截图预览
+## 🌈 在线体验
 
-> 你可以在这里插入页面截图，示例：
+- **测速主页**：[https://你的workers.dev/](https://你的workers.dev/)
+- **IP工具箱**：[https://你的workers.dev/index.html](https://你的workers.dev/index.html)
+
+> 你可以将自己的域名绑定到 Cloudflare Workers，体验更佳！
+
+---
+
+## 🖼️ 截图预览
 
 | 测速主页 | IP工具箱 |
 | :------: | :------: |
@@ -53,65 +31,47 @@ ZQ-IpSpeed 是一个基于 Cloudflare Workers 的高颜值 IP 查询与网络测
 
 ---
 
-## 快速部署
+## 🚀 快速部署
 
-### 方式一：一键脚本自动部署（推荐）
+### 🛠️ 命令行一键部署（推荐）
 
-1. 克隆仓库
 ```bash
 git clone https://github.com/BAYUEQI/ZQ-IpSpeed.git
-```
-```bash
 cd ZQ-IpSpeed
-```
-
-2. 安装 wrangler
-```bash
 npm install -g wrangler
-```
-3.登录cloudfalre账号
-```bash
 wrangler login
-```
-4.安装依赖
-```bash
 npm install
-```
-5.部署到cloudfalre worker
-```bash
 wrangler deploy
 ```
 
----
+### 🖱️ Cloudflare 控制台导入部署
 
-### 方式二：手动部署
-
-1. **克隆项目**
-   点击右上角的fork
-
-2. **cloudfalre部署**
-    打开cloudflare，创建新的worker，接着点击导入存储库，选择本项目，点击创建和部署。
-
+1. Fork 本项目到你的 GitHub 账号
+2. 打开 Cloudflare Workers 控制台，选择"导入 GitHub 仓库"
+3. 选择本项目，点击"创建并部署"
+4. 绑定自定义域名（可选）
 
 ---
 
+## 🛠️ 技术栈
 
-## 技术细节
-
-- **前端**：原生 HTML+CSS+JS，无依赖，赛博风格美化，移动端适配
-- **后端**：Cloudflare Workers，支持多源 IP 查询，测速逻辑全部前端实现
+- **前端**：原生 HTML+CSS+JS，赛博风格美化，移动端适配
+- **后端**：Cloudflare Workers，多源 IP 查询，测速逻辑全部前端实现
 - **部署**：Cloudflare Workers Sites，静态资源与 Worker 脚本一体化
 - **安全**：无用户数据存储，所有查询实时获取
 
-
 ---
 
-## 许可证
+## 📄 许可证
 
 本项目采用 MIT License，详见 [LICENSE](./LICENSE)。
 
 ---
 
-## 联系
+## 💬 联系与反馈
 
-如有建议或问题，欢迎提 [issue](https://github.com/BAYUEQI/ZQ-IpSpeed/issues) 或 PR！ 
+如有建议或问题，欢迎提 [issue](https://github.com/BAYUEQI/ZQ-IpSpeed/issues) 或 PR！
+
+---
+
+> ⭐️ 如果你喜欢本项目，欢迎 Star & Fork！ 
