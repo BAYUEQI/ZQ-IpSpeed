@@ -448,7 +448,7 @@ function renderHtml(data) {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 4px;
+      gap: 0;
     }
     
     .cyber-button:hover {
@@ -464,15 +464,17 @@ function renderHtml(data) {
     }
     
     .button-icon {
-      margin-right: 0;
+      margin-right: 0 !important;
+      padding: 0 !important;
     }
     
     .button-text {
+      margin-left: 0 !important;
+      padding: 0 !important;
       display: inline-block;
       vertical-align: middle;
       text-align: center;
       flex: 1;
-      margin-left: 0;
     }
     
     /* 明暗主题样式 */
