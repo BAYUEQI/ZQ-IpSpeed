@@ -425,56 +425,34 @@ function renderHtml(data) {
       display: flex;
       width: 100%;
       max-width: 900px;
-      margin: 30px auto 40px auto;
-      gap: 12px;
+      margin: 30px auto 20px auto;
+      gap: 20px;
       justify-content: center;
-    }
-    .button-container .cyber-button {
-      flex: 1;
-      min-width: 0;
     }
     
     .cyber-button {
-      background: linear-gradient(145deg, rgba(0, 0, 0, 0.8), rgba(20, 0, 20, 0.9));
-      border: 2px solid #00ffff;
-      border-radius: 12px;
-      color: #00ffff;
-      padding: 12px 20px;
-      font-family: 'Orbitron', monospace;
-      font-size: 0.9rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s ease;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 0;
-    }
-    
-    .cyber-button:hover {
-      border-color: #ffff00;
-      box-shadow: 0 0 20px rgba(255, 255, 0, 0.5);
-      color: #ffff00;
-      text-shadow: 0 0 6px #ffff00;
-      transform: translateY(-2px);
-    }
-    
-    .cyber-button:active {
-      transform: translateY(0);
+      flex: 1;
+      min-width: 0;
+      gap: 6px;
+      padding: 12px 0;
+      font-size: 1rem;
     }
     
     .button-icon {
-      margin-right: 0 !important;
-      padding: 0 !important;
+      margin-right: 0;
+      padding: 0;
     }
     
     .button-text {
-      margin-left: 0 !important;
-      padding: 0 !important;
+      margin-left: 0;
+      padding: 0;
       display: inline-block;
       vertical-align: middle;
       text-align: center;
-      flex: 1;
+      flex: unset;
     }
     
     /* 明暗主题样式 */
