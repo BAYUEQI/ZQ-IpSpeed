@@ -638,7 +638,11 @@ function renderHtml(data) {
       }
     }
     footer {
-      margin-top: 60px;
+      margin-top: 20px;
+      text-align: center;
+      color: #00ffff;
+      font-size: 13px;
+      opacity: 0.85;
     }
   </style>
 </head>
@@ -705,7 +709,7 @@ function renderHtml(data) {
       <span class="button-text">IP 获取</span>
     </button>
   </div>
-  <footer style="text-align:center;margin-top:30px;color:#00ffff;font-size:13px;opacity:0.85;">
+  <footer>
     <div>© 2025 <a href="https://github.com/BAYUEQI" target="_blank" style="color:#00ffff;text-decoration:underline;">BAYUEQI</a> | MIT License</div>
   </footer>
   <script>
