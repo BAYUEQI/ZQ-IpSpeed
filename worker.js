@@ -430,6 +430,29 @@ function renderHtml(data) {
       gap: 16px;
       z-index: 1000;
     }
+    @media (max-width: 768px) {
+      .button-container {
+        position: static;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+      }
+      .cyber-button {
+        width: 100%;
+        min-width: 0;
+        font-size: 1rem;
+        padding: 14px 0;
+        border-radius: 10px;
+      }
+    }
     
     .cyber-button {
       background: linear-gradient(145deg, rgba(0, 0, 0, 0.8), rgba(20, 0, 20, 0.9));
