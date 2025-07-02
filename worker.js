@@ -447,14 +447,8 @@ function renderHtml(data) {
       transition: all 0.2s ease;
       display: flex;
       align-items: center;
-      gap: 8px;
-      box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
-      backdrop-filter: blur(5px);
-      text-shadow: 0 0 6px #00ffff;
-      letter-spacing: 0.5px;
-      display: flex;
-      align-items: center;
       justify-content: center;
+      gap: 4px;
     }
     
     .cyber-button:hover {
@@ -470,8 +464,7 @@ function renderHtml(data) {
     }
     
     .button-icon {
-      font-size: 1.1em;
-      filter: drop-shadow(0 0 4px currentColor);
+      margin-right: 0;
     }
     
     .button-text {
@@ -479,6 +472,7 @@ function renderHtml(data) {
       vertical-align: middle;
       text-align: center;
       flex: 1;
+      margin-left: 0;
     }
     
     /* 明暗主题样式 */
