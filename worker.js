@@ -596,25 +596,30 @@ function renderHtml(data) {
     @media (max-width: 768px) {
       .button-container {
         flex-direction: column;
-        gap: 18px;
+        gap: 14px;
         width: 100%;
-        margin: 24px 0 0 0;
-        align-items: stretch;
+        margin: 20px 0 0 0;
         padding: 0 8px;
         box-sizing: border-box;
       }
       .cyber-button {
         width: 100%;
         flex: unset;
+        font-size: 0.95rem;
+        padding: 12px 0;
         min-width: 0;
-        max-width: 100%;
-        justify-content: center;
-        font-size: 1.08rem;
-        padding: 16px 0;
-        border-radius: 14px;
+        word-break: break-all;
+        white-space: normal;
+        text-align: center;
+        line-height: 1.3;
       }
       .button-text {
-        font-size: 1.08rem;
+        font-size: 0.98em;
+        word-break: break-all;
+        white-space: normal;
+        text-align: center;
+        flex: unset;
+        padding: 0 2px;
       }
     }
     
