@@ -643,7 +643,7 @@ function renderHtml(data) {
       margin-top: 20px;
       text-align: center;
       color: #00ffff;
-      font-size: 13px;
+      font-size: 16px;
       opacity: 0.85;
     }
   </style>
