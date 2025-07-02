@@ -426,34 +426,42 @@ function renderHtml(data) {
       width: 100%;
       max-width: 900px;
       margin: 30px auto 20px auto;
-      gap: 20px;
+      gap: 16px;
       justify-content: center;
     }
     
     .cyber-button {
-      background: linear-gradient(145deg, rgba(0, 0, 0, 0.8), rgba(20, 0, 20, 0.9));
+      background: linear-gradient(145deg, rgba(0,0,0,0.8), rgba(20,0,20,0.9));
       border: 2px solid #00ffff;
-      border-radius: 12px;
       color: #00ffff;
+      font-family: 'Orbitron', monospace;
+      font-weight: 600;
+      box-shadow: 0 0 15px rgba(0,255,255,0.3);
+      text-shadow: 0 0 6px #00ffff;
+      letter-spacing: 0.5px;
+      border-radius: 12px;
+      transition: all 0.2s;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 4px;
+      gap: 6px;
+      flex: 1;
+      min-width: 0;
       padding: 12px 0;
-      font-family: 'Orbitron', monospace;
       font-size: 1rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
-      backdrop-filter: blur(5px);
-      text-shadow: 0 0 6px #00ffff;
-      letter-spacing: 0.5px;
+    }
+    
+    .cyber-button:hover {
+      border-color: #ffff00;
+      box-shadow: 0 0 20px rgba(255,255,0,0.5);
+      color: #ffff00;
+      text-shadow: 0 0 6px #ffff00;
     }
     
     .button-icon {
       margin-right: 0;
       padding: 0;
+      font-size: 1.1em;
     }
     
     .button-text {
@@ -463,6 +471,7 @@ function renderHtml(data) {
       vertical-align: middle;
       text-align: center;
       flex: unset;
+      white-space: nowrap;
     }
     
     /* 明暗主题样式 */
@@ -584,7 +593,7 @@ function renderHtml(data) {
         width: 100%;
         margin: 20px 0 0 0;
       }
-      .button-container .cyber-button {
+      .cyber-button {
         width: 100%;
         flex: unset;
       }
