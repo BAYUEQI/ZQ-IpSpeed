@@ -58,29 +58,29 @@ ZQ-IpSpeed 是一个基于 Cloudflare Workers 的高颜值 IP 查询与网络测
 ### 方式一：一键脚本自动部署（推荐）
 
 1. 克隆仓库
-   ```bash
-   git clone https://github.com/BAYUEQI/ZQ-IpSpeed.git
-   ```
-   ```bash
-   cd ZQ-IpSpeed
-   ```
+```bash
+git clone https://github.com/BAYUEQI/ZQ-IpSpeed.git
+```
+```bash
+cd ZQ-IpSpeed
+```
 
 2. 安装 wrangler
-   ```bash
-   npm install -g wrangler
-   ```
+```bash
+npm install -g wrangler
+```
 3.登录cloudfalre账号
-  ```bash
-   wrangler login
-   ```
+```bash
+wrangler login
+```
 4.安装依赖
-  ```bash
-  npm install
-  ```
+```bash
+npm install
+```
 5.部署到cloudfalre worker
-  ```bash
-  wrangler deploy
-  ```
+```bash
+wrangler deploy
+```
 
 ---
 
@@ -95,21 +95,6 @@ ZQ-IpSpeed 是一个基于 Cloudflare Workers 的高颜值 IP 查询与网络测
 
 ---
 
-## 常见问题
-
-### Q: 为什么访问 `/index.html` 和 `/` 是两个不同页面？
-A: `/` 是 Worker 动态页面（测速主页），`/index.html` 是静态工具箱页面。你可以通过底部按钮互相跳转。
-
-### Q: 如何自定义测速/查询API源？
-A: 你可以在 `worker.js` 里修改 `getGeoDataFromMultipleSources` 函数，添加或替换 API 源。
-
-### Q: 如何绑定自定义域名？
-A: 在 Cloudflare 后台添加自定义域名，并在 wrangler.toml 里配置 `route` 和 `zone_id`。
-
-### Q: 支持哪些浏览器和设备？
-A: 支持所有现代浏览器，移动端自适应，推荐 Chrome/Edge/Firefox。
-
----
 
 ## 技术细节
 
@@ -118,16 +103,6 @@ A: 支持所有现代浏览器，移动端自适应，推荐 Chrome/Edge/Firefox
 - **部署**：Cloudflare Workers Sites，静态资源与 Worker 脚本一体化
 - **安全**：无用户数据存储，所有查询实时获取
 
----
-
-## 鸣谢
-
-- [Cloudflare Workers](https://workers.cloudflare.com/)
-- [ipapi.co](https://ipapi.co/)
-- [ip-api.com](http://ip-api.com/)
-- [ipinfo.io](https://ipinfo.io/)
-- [Font Awesome](https://fontawesome.com/)
-- 以及所有开源贡献者
 
 ---
 
