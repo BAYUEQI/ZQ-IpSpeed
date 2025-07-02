@@ -422,67 +422,54 @@ function renderHtml(data) {
     }
     
     .button-container {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
       display: flex;
       gap: 16px;
+      z-index: 1000;
     }
+    
     .cyber-button {
-      flex: 1 1 0;
-      min-width: 0;
-      text-align: center;
-      justify-content: center;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 4px;
+      background: linear-gradient(145deg, rgba(0, 0, 0, 0.8), rgba(20, 0, 20, 0.9));
+      border: 2px solid #00ffff;
+      border-radius: 12px;
+      color: #00ffff;
+      padding: 12px 20px;
       font-family: 'Orbitron', monospace;
+      font-size: 0.9rem;
       font-weight: 600;
-      font-size: 16px;
-      border-radius: 10px;
-      background: linear-gradient(to right, #4361ee, #3a56d4);
-      color: white;
-      border: none;
-      padding: 12px 25px;
       cursor: pointer;
-      transition: all 0.3s;
-      box-shadow: 0 4px 10px rgba(67, 97, 238, 0.2);
-      position: relative;
-      overflow: hidden;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+      backdrop-filter: blur(5px);
+      text-shadow: 0 0 6px #00ffff;
+      letter-spacing: 0.5px;
     }
+    
     .cyber-button:hover {
-      background: linear-gradient(to right, #3a56d4, #4361ee);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 15px rgba(67, 97, 238, 0.3);
-      animation: pulse 1.5s infinite;
+      border-color: #ffff00;
+      box-shadow: 0 0 20px rgba(255, 255, 0, 0.5);
       color: #ffff00;
       text-shadow: 0 0 6px #ffff00;
+      transform: translateY(-2px);
     }
+    
+    .cyber-button:active {
+      transform: translateY(0);
+    }
+    
     .button-icon {
-      font-size: 1.3em;
-      display: block;
-      margin-bottom: 2px;
+      font-size: 1.1em;
+      filter: drop-shadow(0 0 4px currentColor);
     }
+    
     .button-text {
-      display: block;
-      text-align: center;
       white-space: nowrap;
-    }
-    @media (max-width: 768px) {
-      .button-container {
-        flex-direction: column;
-        gap: 10px;
-        margin: 15px 0;
-        width: 100%;
-        padding: 0 10px;
-        box-sizing: border-box;
-      }
-      .cyber-button {
-        width: 100%;
-        min-width: 0;
-        font-size: 1rem;
-        padding: 14px 0;
-        border-radius: 10px;
-      }
     }
     
     /* 明暗主题样式 */
@@ -590,8 +577,11 @@ function renderHtml(data) {
         bottom: 15px;
       }
       .cyber-button {
-        padding: 10px 16px;
-        font-size: 0.8rem;
+        padding: 12px 24px;
+        font-size: 1rem;
+        min-width: 90px;
+        max-width: 140px;
+        border-radius: 12px;
       }
     }
     
@@ -614,21 +604,23 @@ function renderHtml(data) {
         flex-direction: row;
         gap: 8px;
         z-index: auto;
+        width: 100vw;
+        padding: 0 6vw;
+        box-sizing: border-box;
       }
       .cyber-button {
-        padding: 8px 12px;
-        font-size: 0.75rem;
+        padding: 10px 0;
+        font-size: 0.95rem;
+        min-width: 70px;
+        max-width: 110px;
+        width: 100%;
+        border-radius: 14px;
+        margin: 0 2px;
+        white-space: nowrap;
       }
-    }
-    
-    .copyright {
-      text-align: center;
-      font-size: 13px;
-      color: #8fa1c7;
-      margin-top: 18px;
-      margin-bottom: 8px;
-      letter-spacing: 1px;
-      user-select: none;
+      .button-text {
+        font-size: 0.95em;
+      }
     }
   </style>
 </head>
@@ -690,12 +682,14 @@ function renderHtml(data) {
       <span class="button-icon">📦</span>
       <span class="button-text">GitHub</span>
     </button>
-    <button class="cyber-button" id="to-worker" onclick="location.href='/index.html'">
-      <span class="button-icon">🚀</span>
+    <button class="cyber-button" id="to-index" onclick="location.href='/index.html'">
+      <span class="button-icon">🧰</span>
       <span class="button-text">IP 获取</span>
     </button>
   </div>
-  <div class="copyright">© 2025 BAYUEQI | ZQ-IpSpeed</div>
+  <footer style="text-align:center;margin-top:30px;color:#00ffff;font-size:13px;opacity:0.85;">
+    <div>© 2025 <a href="https://github.com/BAYUEQI" target="_blank" style="color:#00ffff;text-decoration:underline;">BAYUEQI</a> | MIT License</div>
+  </footer>
   <script>
     function renderGauge(id, value, max, color, unit) {
       const percent = Math.min(value / max, 1);
