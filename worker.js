@@ -697,6 +697,11 @@ function renderHtml(data) {
       <span class="button-text">IP 获取</span>
     </button>
   </div>
+  <footer>
+    <div class="attribution">
+      &copy; 2024 <a href="https://github.com/BAYUEQI/ZQ-IpSpeed" target="_blank">BAYUEQI</a> | ZQ-IpSpeed
+    </div>
+  </footer>
   <script>
     function renderGauge(id, value, max, color, unit) {
       const percent = Math.min(value / max, 1);
