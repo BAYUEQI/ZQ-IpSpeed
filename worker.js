@@ -422,86 +422,67 @@ function renderHtml(data) {
     }
     
     .button-container {
-      position: fixed;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
       display: flex;
       gap: 16px;
-      z-index: 1000;
     }
-    @media (max-width: 900px) {
-      .button-container {
-        position: static !important;
-        bottom: auto !important;
-        left: auto !important;
-        transform: none !important;
-        margin-top: 30px !important;
-        margin-bottom: 20px !important;
-        justify-content: center !important;
-        flex-direction: column !important;
-        gap: 10px !important;
-        width: 100% !important;
-        padding: 0 10px !important;
-        box-sizing: border-box !important;
-        align-items: stretch !important;
-      }
-      .cyber-button {
-        width: 100% !important;
-        min-width: 0 !important;
-        font-size: 1rem !important;
-        padding: 14px 0 !important;
-        border-radius: 10px !important;
-        margin-bottom: 0 !important;
-      }
-    }
-    
     .cyber-button {
+      flex: 1 1 0;
+      min-width: 0;
+      text-align: center;
+      justify-content: center;
+      box-sizing: border-box;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      width: 100%;
-      background: linear-gradient(145deg, rgba(0, 0, 0, 0.8), rgba(20, 0, 20, 0.9));
-      border: 2px solid #00ffff;
-      border-radius: 12px;
-      color: #00ffff;
-      padding: 12px 20px;
+      gap: 4px;
       font-family: 'Orbitron', monospace;
-      font-size: 0.9rem;
       font-weight: 600;
+      font-size: 16px;
+      border-radius: 10px;
+      background: linear-gradient(to right, #4361ee, #3a56d4);
+      color: white;
+      border: none;
+      padding: 12px 25px;
       cursor: pointer;
-      transition: all 0.2s ease;
-      gap: 0;
-      box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
-      backdrop-filter: blur(5px);
-      text-shadow: 0 0 6px #00ffff;
-      letter-spacing: 0.5px;
+      transition: all 0.3s;
+      box-shadow: 0 4px 10px rgba(67, 97, 238, 0.2);
+      position: relative;
+      overflow: hidden;
     }
-    
     .cyber-button:hover {
-      border-color: #ffff00;
-      box-shadow: 0 0 20px rgba(255, 255, 0, 0.5);
+      background: linear-gradient(to right, #3a56d4, #4361ee);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(67, 97, 238, 0.3);
+      animation: pulse 1.5s infinite;
       color: #ffff00;
       text-shadow: 0 0 6px #ffff00;
-      transform: translateY(-2px);
     }
-    
-    .cyber-button:active {
-      transform: translateY(0);
-    }
-    
     .button-icon {
-      margin-right: 0;
-      margin-bottom: 4px;
       font-size: 1.3em;
       display: block;
+      margin-bottom: 2px;
     }
-    
     .button-text {
-      white-space: nowrap;
-      text-align: center;
       display: block;
+      text-align: center;
+      white-space: nowrap;
+    }
+    @media (max-width: 768px) {
+      .button-container {
+        flex-direction: column;
+        gap: 10px;
+        margin: 15px 0;
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+      }
+      .cyber-button {
+        width: 100%;
+        min-width: 0;
+        font-size: 1rem;
+        padding: 14px 0;
+        border-radius: 10px;
+      }
     }
     
     /* 明暗主题样式 */
@@ -699,9 +680,9 @@ function renderHtml(data) {
       <span class="button-icon">📦</span>
       <span class="button-text">GitHub</span>
     </button>
-    <button class="cyber-button" id="to-index" onclick="location.href='/index.html'">
-      <span class="button-icon">🧰</span>
-      <span class="button-text">IP 获取</span>
+    <button class="cyber-button" id="to-worker" onclick="location.href='/'">
+      <span class="button-icon">🚀</span>
+      <span class="button-text">IP 查询</span>
     </button>
   </div>
   <script>
