@@ -425,7 +425,7 @@ function renderHtml(data) {
       display: flex;
       width: 100%;
       max-width: 900px;
-      margin: 30px auto 0 auto;
+      margin: 30px auto 40px auto;
       gap: 12px;
       justify-content: center;
     }
@@ -452,6 +452,9 @@ function renderHtml(data) {
       backdrop-filter: blur(5px);
       text-shadow: 0 0 6px #00ffff;
       letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     
     .cyber-button:hover {
@@ -472,7 +475,10 @@ function renderHtml(data) {
     }
     
     .button-text {
-      white-space: nowrap;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+      flex: 1;
     }
     
     /* 明暗主题样式 */
@@ -636,6 +642,9 @@ function renderHtml(data) {
       .button-text {
         font-size: 0.95em;
       }
+    }
+    footer {
+      margin-top: 60px;
     }
   </style>
 </head>
